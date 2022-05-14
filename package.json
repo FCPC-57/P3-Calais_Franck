@@ -1,0 +1,19 @@
+{
+  "name": "writting-sass",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./sass/main.scss:.public/css/style.css --style expanded"
+    },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FCPC-57/P3-Calais_Franck.git"
+  },
+  "author": "Franck Calais",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/FCPC-57/P3-Calais_Franck/issues"
+  },
+  "homepage": "https://github.com/FCPC-57/P3-Calais_Franck#readme"
+}
