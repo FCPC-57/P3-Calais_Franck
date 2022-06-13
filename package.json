@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "sass": "sass --watch ./sass/main.scss:.public/css/style.css --style expanded"
+    "sass": "sass --watch ./sass/main.scss:./css/style.css --style expanded",
+    "prefix": "postcss ./css/style.css --use autoprefixer -d ./css/prefixed/"
     },
   "repository": {
     "type": "git",
@@ -12,7 +13,8 @@
   },
   "author": "Franck Calais",
   "license": "ISC",
-  "bugs": {
+  "browserslist": "last 4 versions"
+,  "bugs": {
     "url": "https://github.com/FCPC-57/P3-Calais_Franck/issues"
   },
   "homepage": "https://github.com/FCPC-57/P3-Calais_Franck#readme"
