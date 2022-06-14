@@ -9,4 +9,13 @@
           box-sizing: border-box;
   /* box-sizing est appliqué à tous les éléments */
 }
+
+/* Body */
+body {
+  font-family: "Raleway", Arial, Helvetica, sans-serif;
+  margin: auto;
+  max-width: -webkit-fit-content;
+  max-width: -moz-fit-content;
+  max-width: fit-content;
+}
 /*# sourceMappingURL=main.css.map */
