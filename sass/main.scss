@@ -1,3 +1,4 @@
 /* Chargement des différentes variables */
-@import "./Utils/variables";
-@import "./Base/variables";
+@import "./sass/Utils/variables";
+@import "/sass/Utils/mixin";
+@import "./sass/Base/variables";

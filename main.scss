@@ -1,11 +1,11 @@
 /* Chargement des différentes variables */
 @import "./sass/Utils/variables";
-@import "./sass/Base/variables";
-
-/* Body */
+@import "./sass/Utils/mixin";
+@import "./sass/Base/base";
+@import "./sass/Pages/index";
 
 body {
-    font-family: "Raleway", Arial, Helvetica, sans-serif;
+    font-family: "Roboto", Arial, Helvetica, sans-serif;
     margin: auto;
     max-width: fit-content;
-}
+  }

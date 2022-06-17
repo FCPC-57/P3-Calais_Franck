@@ -5,18 +5,24 @@
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <script src="https://kit.fontawesome.com/1513f99256.js" crossorigin="anonymous"></script>
-<link rel="stylesheet" type="text/css" href="css/style.css">
-<title>Ohmyfood</title>
+<link rel="stylesheet" type="text/css" href="main.css">
+<title>Ohmyfood - Accueil</title>
 </head>
 
 <body>
-    <span class="spinner"></span>
+    <div class="loader">
+        <div class="loader__itemContainer">
+          <div class="loader__item loader__item--1"></div>
+          <div class="loader__item loader__item--2"></div>
+          <div class="loader__item loader__item--3"></div>
+        </div>
+      </div>
     <!--loader spinner-->
-    <i class="fa-solid fa-burger"></i>
-    <header>
-        <div><img src="../images/logo.png" class="logo" alt="logo du site"></div>
+    <header class="header">
+          <h1 class="header__logo" href="index.html">ohmyfood </h1>
     </header>
     <article class="reservation">
+        <div class="container">
         <form method="post">
             <!--Formulaire de recherche-->
             <div class="icone-plus-barre">
@@ -27,7 +33,7 @@
             <div class="reservation__tablette">
                 <!--Balise crée pour le reponsive-->
                 <div class="reservation__titre">
-                    <h1>Réservez le menu qui <br> vous convient</h1>
+                    <h2>Réservez le menu qui <br> vous convient</h2>
                 </div>
                 <div class="reservation__texte">
                     <p>Découvrez des restaurants d'exception, sélectionnés par nos soins.</p>
@@ -35,6 +41,7 @@
                 <button type="submit" id="bouton_resa"> Explorer nos restaurants </button>
             </div>
         </form>
+        </div>
     </article>
     <nav>
         <!--Fonctionnement en balise nav-->
@@ -52,70 +59,130 @@
         </div>
     </nav>
     <main>
-        <section class="main-accueil">
+        <section class="main-accueil" id="main-accueil">
             <!--Partie principale avec les restaurants-->
-            <div class="rang-1">
+            <div class="content">
+                <h3>Restaurants</h3>
                 <!--On créer des rangs pour un meilleur responsive en tablette et +-->
+                <div class="carte-grid">
                 <article class="carte">
-                    <h1>Restaurants</h1>
                     <!--On rajoute le titre dans la classe carte pour que le titre suive correctement en responsive-->
-                    <a href="index_menu_a_la_francaise.html">
-                        <div class="carte__image"><img src="../images/la-palette.jpg" class="la-palette"
-                                alt="image restaurant la palette du goût"></div>
-                        <div class="carte__contenu">
-                            <p class="carte__titre">La palette du goût</p>
-                            <p class="carte__adresse">Ménilmontant</p>
-                            <i class="fa-regular fa-heart"></i>
-                            <p class="carte__nouveau">Nouveau</p>
-                        </div>
+                    <a href="page_restaurant_id01.html">
+                        <div class="carte__image"><img src="./img/restaurants/palette.jpg" class="carte__image"
+                                alt="Restaurant la palette du goût"></div>
+                                <span class="carte__nouveau">Nouveau</span>
+                                <footer class="carte__footer">
+                                  <div class="carte__contenu">
+                                    <h3 class="carte__titre">La palette du goût</h3>
+                                    <span class="carte__titre2">Ménilmontant</span>
+                                  </div>
+                                  <div class="carte__btn menu__btn">
+                                    <i
+                                      class="card__like fa-2x fa-heart far menu__like menu__like--noBg"
+                                    ></i>
+                                    <i
+                                      class="card__like fa-2x fa-heart fas menu__like menu__like--bg"
+                                    ></i>
+                                  </div>
+                                </footer>
                     </a>
                 </article>
-                <article class="carte carte--2">
-                    <div class="carte__image"><img src="../images/note-enchantee.jpg" class="note-enchantee"
-                            alt="image restaurant la note enchantée"></div>
-                    <div class="carte__contenu">
-                        <p class="carte__titre">La note enchantée</p>
-                        <p class="carte__adresse">Charonne</p>
-                        <i class="fa-regular fa-heart"></i>
-                        <p class="carte__nouveau">Nouveau</p>
-                    </div>
-                </article>
-            </div>
-            <div class="rang-2">
-                <article class="carte carte--3">
-                    <a href="index_menu_a_la_francaise.html">
-                        <div class="carte__image"><img src="../images/a-la-francaise.jpg" class="la-francaise"
-                                alt="image restaurant à la française"></div>
-                        <div class="carte__contenu">
-                            <p class="carte__titre">À la française</p>
-                            <p class="carte__adresse">Cité Rouge</p>
-                            <i class="fa-regular fa-heart"></i>
-                        </div>
+
+                <article class="carte">
+                    <!--On rajoute le titre dans la classe carte pour que le titre suive correctement en responsive-->
+                    <a href="page_restaurant_id02.html">
+                        <div class="carte__image"><img src="./img/restaurants/note.jpg" class="carte__image"
+                                alt="Restaurant la palette du goût"></div>
+                                <span class="carte__nouveau">Nouveau</span>
+                                <footer class="carte__footer">
+                                  <div class="carte__contenu">
+                                    <h3 class="carte__titre">La note enchantée</h3>
+                                    <span class="carte__titre2">Charonne</span>
+                                  </div>
+                                  <div class="carte__btn menu__btn">
+                                    <i
+                                      class="card__like fa-2x fa-heart far menu__like menu__like--noBg"
+                                    ></i>
+                                    <i
+                                      class="card__like fa-2x fa-heart fas menu__like menu__like--bg"
+                                    ></i>
+                                  </div>
+                                </footer>
                     </a>
                 </article>
-                <article class="carte carte--4">
-                    <div class="carte__image"><img src="../images/delice-des-sens.jpg" class="delice-des-sens"
-                            alt="image restaurant Le délice des sens"></div>
-                    <div class="carte__contenu">
-                        <p class="carte__titre">Le délice des sens</p>
-                        <p class="carte__adresse">Folie-Méricourt</p>
-                        <i class="fa-regular fa-heart"></i>
-                    </div>
+                <article class="carte">
+                    <!--On rajoute le titre dans la classe carte pour que le titre suive correctement en responsive-->
+                    <a href="page_restaurant_id03.html">
+                        <div class="carte__image"><img src="./img/restaurants/francaise.jpg" class="carte__image"
+                                alt="Restaurant la palette du goût"></div>
+                                <footer class="carte__footer">
+                                  <div class="carte__contenu">
+                                    <h3 class="carte__titre">À la française</h3>
+                                    <span class="carte__titre2">Cité Rouge</span>
+                                  </div>
+                                  <div class="carte__btn menu__btn">
+                                    <i
+                                      class="card__like fa-2x fa-heart far menu__like menu__like--noBg"
+                                    ></i>
+                                    <i
+                                      class="card__like fa-2x fa-heart fas menu__like menu__like--bg"
+                                    ></i>
+                                  </div>
+                                </footer>
+                    </a>
                 </article>
+                <article class="carte">
+                    <!--On rajoute le titre dans la classe carte pour que le titre suive correctement en responsive-->
+                    <a href="page_restaurant_id04.html">
+                        <div class="carte__image"><img src="./img/restaurants/sens.jpg" class="carte__image"
+                                alt="Restaurant la palette du goût"></div>
+                                <footer class="carte__footer">
+                                  <div class="carte__contenu">
+                                    <h3 class="carte__titre">Le délice des sens</h3>
+                                    <span class="carte__titre2">Folie-Méricourt</span>
+                                  </div>
+                                  <div class="carte__btn menu__btn">
+                                    <i
+                                      class="card__like fa-2x fa-heart far menu__like menu__like--noBg"
+                                    ></i>
+                                    <i
+                                      class="card__like fa-2x fa-heart fas menu__like menu__like--bg"
+                                    ></i>
+                                  </div>
+                                </footer>
+                    </a>
+                </article>
+                </div>
             </div>
         </section>
     </main>
-    <footer>
-        <div class="footer">
-            <span class="footer__titre">ohmyfood</span>
-            <nav class="footer__nav">
-                <p><i class="fa-solid fa-utensils"></i> Proposer un restaurant</p>
-                <p><i class="fa-solid fa-handshake-angle"></i> Devenir partenaire</p>
-                <p>Mentions légales</p>
-                <p><a href="mailto:#">Contact</a></p>
-            </nav>
+    <footer class="footer">
+        <div class="container">
+          <span class="footer__logo">ohmyfood</span>
+          <ul class="footer__list">
+            <li class="footer__listElt">
+              <a class="footer__link" href="#"
+                ><i class="fa-utensils fas footer__icon"></i>Proposer un
+                restaurant</a
+              >
+            </li>
+            <li class="footer__listElt">
+              <a class="footer__link" href="#"
+                ><i class="fa-hands-helping fas footer__icon"></i>Devenir
+                partenaire</a
+              >
+            </li>
+            <li class="footer__listElt">
+              <a class="footer__link" href="#">Mentions légales</a>
+            </li>
+            <li class="footer__listElt">
+              <a class="footer__link" href="mailto:contact@ohmyfood.com"
+                >Contact</a
+              >
+            </li>
+          </ul>
         </div>
-    </footer>
+      </footer>
 </body>
 
 </html>
