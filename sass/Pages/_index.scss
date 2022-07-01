@@ -1,3 +1,9 @@
+/* Liens */
+a {
+  text-decoration: none;
+  color: #000;
+}
+
 /* Header */
 .header {
   padding: 1rem;
@@ -9,6 +15,129 @@
   font-family: Shrikhand, "cursive";
   margin: 0;
   text-align: center;
+}
+
+.location {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 50px;
+  background-color: #eaeaea;
+}
+.location i {
+  padding-right: 20px;
+}
+
+.container {
+  max-width: 1440px;
+  margin: auto;
+  position: relative;
+}
+
+.container2 {
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.fonctionnement-list {
+  display: flex;
+  justify-content: space-evenly;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+@media (max-width: 992px) {
+  .fonctionnement-list {
+    flex-direction: column;
+    margin-bottom: 2em;
+  }
+}
+.fonctionnement-list_cards {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  background-color: #f6f6f6;
+  padding: 20px 35px 20px 35px;
+  border-radius: 20px;
+  position: relative;
+  margin-bottom: 30px;
+  font-weight: 700;
+  box-shadow: 1px 11px 14px 0px rgba(130, 130, 130, 0.38);
+}
+.fonctionnement-list_cards i {
+  padding-right: 30px;
+  color: #7e7e7e;
+}
+.fonctionnement-list_cards .listing {
+  position: absolute;
+  left: 0;
+  transform: translate(-15px);
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  padding: 5px;
+  background-color: #9356DC;
+  color: #fff;
+  border-radius: 50%;
+}
+.fonctionnement-list_cards:hover {
+  background-color: #f5edff;
+}
+.fonctionnement-list_cards:hover i {
+  color: #9356DC;
+}
+
+.btn2 .btn {
+  display: block;
+  width: 100%;
+  max-width: 16em;
+}
+
+.btn {
+  background: #ff79da;
+  background: linear-gradient(180deg, #ff79da 0%, #ba62db 100%);
+  box-shadow: 1px 11px 14px 0px rgba(130, 130, 130, 0.38);
+  padding: 20px;
+  color: #FFF;
+  font-family: "Roboto";
+  text-decoration: none;
+  border-radius: 50px;
+  transition: 400ms;
+  border-style : none
+}
+.btn:hover {
+  background: linear-gradient(180deg, #ff99e2 0%, #dc7bff 100%);
+  box-shadow: 1px 11px 14px 0px rgba(109, 109, 109, 0.699);
+}
+
+.reservation__tablette {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  background-color: #f6f6f6;
+  height: 290px;
+}
+.reservation__tablette h2 {
+  margin: 0;
+  font-size: 2.5em;
+}
+@media (max-width: 768px) {
+  .reservation__tablette h2 {
+    width: 220px;
+    font-size: 1.5em;
+  }
+}
+.reservation__tablette p {
+  font-weight: 300;
+  font-size: 1.6em;
+}
+@media (max-width: 768px) {
+  .reservation__tablette p {
+    width: 280px;
+    font-size: 1em;
+  }
 }
 
 /* Articles */  
@@ -29,6 +158,18 @@
     column-gap: 2rem;
     row-gap: 2rem;
   }
+  @media screen and (min-width: 768px) {
+    .carte-grid {
+      display: flex;
+      align-items: stretch;
+      justify-content: space-evenly;
+      width: -webkit-fill-available;
+    }
+    .carte {
+      width: inherit;
+    }
+
+      }
   @media (min-width: 64rem) {
     .cards {
       grid-template-columns: repeat(2, 1fr);
@@ -42,6 +183,8 @@
     color: inherit;
     display: block;
   }
+
+
   .carte__image {
     height: 12rem;
     width: 100%;
@@ -89,13 +232,6 @@
     color: #000;
   }
 
-  .menu {
-    margin-top: -4rem;
-    border-radius: 2rem 2rem 0 0;
-    background-color: #f6f6f6;
-    z-index: 1;
-    position: relative;
-  }
   .menu__header {
     padding: 1rem 2rem 0 1rem;
     display: flex;

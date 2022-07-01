@@ -3,10 +3,20 @@
 @import "./sass/Utils/mixin";
 @import "./sass/Base/base";
 @import "./sass/Pages/index";
+@import "./sass/Pages/menu";
 
 body {
     font-family: "Roboto", Arial, Helvetica, sans-serif;
     margin: auto;
-    max-width: fit-content;
+    max-width: 1440px;
     scroll-behavior: smooth;
+  }
+
+  h2, h3 {
+    font-family: "Roboto";
+    font-weight: 700;
+  }
+  
+  p, a {
+    font-family: "Roboto";
   }
