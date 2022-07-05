@@ -1,37 +1,47 @@
 @keyframes itemAppear {
-  0% {
-    transform: scale(0);
+    0% {
+      transform: scale(0);
+    }
+    to {
+      transform: scale(1);
+    }
   }
-  to {
-    transform: scale(1);
+  @keyframes loader {
+    to {
+      opacity: 0;
+      z-index: -10;
+    }
   }
-}
-@keyframes loader {
-  to {
-    opacity: 0;
-    z-index: -10;
+  @keyframes animateC
+  {
+  0%
+  {
+    transform:rotate(0deg);
   }
-}
-@keyframes animateC
-{
-0%
-{
-  transform:rotate(0deg);
-}
-100%
-{
-  transform:rotate(360deg);
-}
-}
-@keyframes animate
-{
-0%
-{
-  transform:rotate(45deg);
-}
-100%
-{
-  transform:rotate(405deg);
-}
-}
+  100%
+  {
+    transform:rotate(360deg);
+  }
+  }
+  @keyframes animate
+  {
+  0%
+  {
+    transform:rotate(45deg);
+  }
+  100%
+  {
+    transform:rotate(405deg);
+  }
+  }
 
+  @keyframes rotate {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
+  

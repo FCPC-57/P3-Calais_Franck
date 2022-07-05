@@ -1,9 +1,9 @@
 .menu {
   margin-bottom: -60px;
+  display: block;
 }
 .menu img {
   width: 100%;
-  max-width: 100%;
   height: 30vh;
   object-fit: cover;
   display: flex;
@@ -14,7 +14,7 @@
   border-top-left-radius: 40px;
   border-top-right-radius: 40px;
   transform: translate(0px, -60px);
-  padding: 2rem 1rem;
+  padding: 20px;
 }
 .menu-container h1 {
   font-family: "Shrikhand", cursive;
@@ -116,6 +116,7 @@
   overflow: hidden;
   text-overflow: ellipsis;
 }
+
 .menu-btn {
   display: flex;
   justify-content: center;
@@ -153,11 +154,11 @@
   font-size: 1.3em;
 }
 .fa-heart:hover {
-  animation: bgcolor 0.5s;
+  animation: bgcolor 0.7s;
   font-weight: 900;
   background: -webkit-linear-gradient(13deg, #ff79da 0%, #ba62db 66%);
   color: transparent;
-  -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  background-clip: text;
   cursor: pointer;
 }

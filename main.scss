@@ -1,22 +1,63 @@
 /* Chargement des différentes variables */
-@import "./sass/Utils/variables";
-@import "./sass/Utils/mixin";
-@import "./sass/Base/base";
-@import "./sass/Pages/index";
-@import "./sass/Pages/menu";
+@import "./sass/Utils/variables"; /* Chargement du loader */
+@import "./sass/Utils/mixin"; /* Chargement des animations */
+@import "./sass/Base/base"; /* Chargement polices et Boxsizing */
+@import "./sass/Pages/index"; /* Chargement de l'index et */
+@import "./sass/Pages/menu"; /* Chargement de la partie des menus */
+
+/* Définition des codes couleurs de la page */
+
+$color1:#9356DC;
+$color2:#FF79DA;
+$color3:#99E2D0;
+
+/* Fonctionnement du coeur avec dégradé */
+
+.fa-heart {
+  font-size: 1.3em;
+&:hover {
+  animation: bgcolor 0.7s;
+  font-weight: 900;
+  background: -webkit-linear-gradient(13deg, #ff79da 0%, #ba62db 66%);
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  cursor: pointer;
+}
+}
+
+
+/* Définition du fonctionnement général du site */
 
 body {
     font-family: "Roboto", Arial, Helvetica, sans-serif;
     margin: auto;
     max-width: 1440px;
-    scroll-behavior: smooth;
+    scroll-behavior: smooth; 
   }
+
+  .content {
+    max-width: 1280px;
+    margin: auto;
+    position: relative;
+  } 
+   .main-accueil {
+    background-color: #f6f6f6;
+    padding: 2rem 1rem;
+    }
 
   h2, h3 {
     font-family: "Roboto";
     font-weight: 700;
   }
   
-  p, a {
+  p {
     font-family: "Roboto";
   }
+
+  /* Liens */
+a {
+  font-family: "Roboto";
+  text-decoration: none;
+  color: #000;
+}
