@@ -1,6 +1,5 @@
 @charset "UTF-8";
 /* Chargement des différentes variables */
-/* Définition des codes couleurs de la page */
 /* Mise en place du loader */
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Shrikhand&display=swap");
 .loading {
@@ -98,6 +97,7 @@
           box-shadow: 0 0 20px #9356DC;
 }
 
+/* Chargement du loader */
 @-webkit-keyframes itemAppear {
   0% {
     -webkit-transform: scale(0);
@@ -108,7 +108,6 @@
             transform: scale(1);
   }
 }
-
 @keyframes itemAppear {
   0% {
     -webkit-transform: scale(0);
@@ -200,6 +199,87 @@
   }
 }
 
+@-webkit-keyframes bgcolor {
+  0% {
+    background: -webkit-linear-gradient(13deg, rgba(255, 121, 217, 0) 0%, rgba(187, 98, 219, 0) 66%);
+    color: transparent;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  30% {
+    background: -webkit-linear-gradient(13deg, rgba(255, 121, 217, 0.452) 0%, rgba(187, 98, 219, 0.452) 66%);
+    color: transparent;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  50% {
+    background: -webkit-linear-gradient(13deg, rgba(255, 121, 217, 0.582) 0%, rgba(186, 98, 219, 0.582) 66%);
+    color: transparent;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  60% {
+    background: -webkit-linear-gradient(13deg, rgba(255, 121, 217, 0.747) 0%, rgba(187, 98, 219, 0.74) 66%);
+    color: transparent;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  80% {
+    background: -webkit-linear-gradient(13deg, rgba(255, 121, 217, 0.918) 0%, rgba(187, 98, 219, 0.836) 66%);
+    color: transparent;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  100% {
+    background: -webkit-linear-gradient(13deg, #ff79da 0%, #ba62db 66%);
+    font-weight: 900;
+    color: transparent;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+}
+
+@keyframes bgcolor {
+  0% {
+    background: -webkit-linear-gradient(13deg, rgba(255, 121, 217, 0) 0%, rgba(187, 98, 219, 0) 66%);
+    color: transparent;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  30% {
+    background: -webkit-linear-gradient(13deg, rgba(255, 121, 217, 0.452) 0%, rgba(187, 98, 219, 0.452) 66%);
+    color: transparent;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  50% {
+    background: -webkit-linear-gradient(13deg, rgba(255, 121, 217, 0.582) 0%, rgba(186, 98, 219, 0.582) 66%);
+    color: transparent;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  60% {
+    background: -webkit-linear-gradient(13deg, rgba(255, 121, 217, 0.747) 0%, rgba(187, 98, 219, 0.74) 66%);
+    color: transparent;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  80% {
+    background: -webkit-linear-gradient(13deg, rgba(255, 121, 217, 0.918) 0%, rgba(187, 98, 219, 0.836) 66%);
+    color: transparent;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  100% {
+    background: -webkit-linear-gradient(13deg, #ff79da 0%, #ba62db 66%);
+    font-weight: 900;
+    color: transparent;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+}
+
+/* Chargement des animations */
 /* Mise en place du fonctionnement général */
 * {
   -webkit-box-sizing: border-box;
@@ -207,6 +287,7 @@
   /* box-sizing est appliqué à tous les éléments */
 }
 
+/* Chargement polices et Boxsizing */
 /* Header */
 .header {
   padding: 1rem;
@@ -228,12 +309,14 @@
   font-family: Shrikhand, "cursive";
   margin: 0;
   text-align: center;
+  font-size: 30px;
 }
 
 .header a {
   position: absolute;
   left: 20px;
   color: #000;
+  font-size: 25px;
 }
 
 .title {
@@ -413,14 +496,11 @@
 
 /* Articles */
 .carte-grid {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: (1fr)[1];
-      grid-template-columns: repeat(1, 1fr);
-  -webkit-column-gap: 2rem;
-          column-gap: 2rem;
-  row-gap: 2rem;
-}
+  display : grid;
+  grid-template-columns : repeat(1,1fr);
+  column-gap : 2rem;
+  row-gap : 2rem;
+  }
 
 @media screen and (min-width: 768px) {
   .carte-grid {
@@ -442,9 +522,8 @@
 
 @media (min-width: 64rem) {
   .cards {
-    -ms-grid-columns: (1fr)[2];
-        grid-template-columns: repeat(2, 1fr);
-  }
+    grid-template-columns : repeat(2,1fr);
+    }
 }
 
 .carte {
@@ -531,21 +610,21 @@
   margin: 0 0 1rem;
 }
 
-.footer__list {
+.footer__menu {
   list-style: none;
   padding: 0;
   margin: 0;
 }
 
-.footer__listElt {
+.footer__submenu {
   margin: 0.5rem 0;
 }
 
-.footer__listElt:first-child {
+.footer__submenu:first-child {
   margin-top: 0;
 }
 
-.footer__listElt:last-child {
+.footer__submenu:last-child {
   margin-bottom: 0;
 }
 
@@ -574,6 +653,7 @@
   padding: 1rem;
 }
 
+/* Chargement de l'index, header et footer */
 .menu {
   margin-bottom: -60px;
   display: block;
@@ -622,7 +702,6 @@
 
 .menu-categorie h2 {
   text-transform: uppercase;
-  font-weight: 0;
   font-size: 1.2em;
 }
 
@@ -761,7 +840,7 @@
   max-width: 16em;
 }
 
-.entree {
+.menup1 {
   margin-bottom: 2.25em;
   -webkit-animation: fadein 1s linear;
           animation: fadein 1s linear;
@@ -771,7 +850,7 @@
           animation-fill-mode: both;
 }
 
-.plats {
+.menup2 {
   margin-bottom: 2.25em;
   -webkit-animation: fadein 1s linear;
           animation: fadein 1s linear;
@@ -781,7 +860,7 @@
           animation-fill-mode: both;
 }
 
-.dessert {
+.menup3 {
   -webkit-animation: fadein 1s linear;
           animation: fadein 1s linear;
   -webkit-animation-delay: 1.5s;
@@ -790,18 +869,22 @@
           animation-fill-mode: both;
 }
 
+/* Chargement de la partie des menus */
+/* Définition des codes couleurs de la page */
+/* Fonctionnement du coeur avec dégradé */
 .fa-heart {
   font-size: 1.3em;
 }
 
 .fa-heart:hover {
-  -webkit-animation: bgcolor 0.7s;
-          animation: bgcolor 0.7s;
+  -webkit-animation: bgcolor 0.5s;
+          animation: bgcolor 0.5s;
   font-weight: 900;
   background: -webkit-linear-gradient(13deg, #ff79da 0%, #ba62db 66%);
   color: transparent;
-  -webkit-text-fill-color: transparent;
+  background-clip: border-box;
   -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   cursor: pointer;
 }
 

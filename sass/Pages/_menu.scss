@@ -30,7 +30,6 @@
 }
 .menu-categorie h2 {
   text-transform: uppercase;
-  font-weight: 0;
   font-size: 1.2em;
 }
 .menu-categorie h2::after {
@@ -130,35 +129,23 @@
   max-width: 16em;
 }
 
-.entree {
+.menup1 {
   margin-bottom: 2.25em;
   animation: fadein 1s linear;
   animation-delay: 0.5s;
   animation-fill-mode: both;
 }
 
-.plats {
+.menup2 {
   margin-bottom: 2.25em;
   animation: fadein 1s linear;
   animation-delay: 1s;
   animation-fill-mode: both;
 }
 
-.dessert {
+.menup3 {
   animation: fadein 1s linear;
   animation-delay: 1.5s;
   animation-fill-mode: both;
 }
 
-.fa-heart {
-  font-size: 1.3em;
-}
-.fa-heart:hover {
-  animation: bgcolor 0.7s;
-  font-weight: 900;
-  background: -webkit-linear-gradient(13deg, #ff79da 0%, #ba62db 66%);
-  color: transparent;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  cursor: pointer;
-}

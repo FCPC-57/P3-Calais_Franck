@@ -2,7 +2,7 @@
 @import "./sass/Utils/variables"; /* Chargement du loader */
 @import "./sass/Utils/mixin"; /* Chargement des animations */
 @import "./sass/Base/base"; /* Chargement polices et Boxsizing */
-@import "./sass/Pages/index"; /* Chargement de l'index et */
+@import "./sass/Pages/index"; /* Chargement de l'index, header et footer */
 @import "./sass/Pages/menu"; /* Chargement de la partie des menus */
 
 /* Définition des codes couleurs de la page */
@@ -15,17 +15,17 @@ $color3:#99E2D0;
 
 .fa-heart {
   font-size: 1.3em;
-&:hover {
-  animation: bgcolor 0.7s;
+}
+.fa-heart:hover {
+  animation: bgcolor 0.5s;
   font-weight: 900;
   background: -webkit-linear-gradient(13deg, #ff79da 0%, #ba62db 66%);
   color: transparent;
+  background-clip: border-box;
+  -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  background-clip: text;
   cursor: pointer;
 }
-}
-
 
 /* Définition du fonctionnement général du site */
 
@@ -60,4 +60,4 @@ a {
   font-family: "Roboto";
   text-decoration: none;
   color: #000;
-}
+} 
