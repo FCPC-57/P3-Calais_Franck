@@ -496,11 +496,14 @@
 
 /* Articles */
 .carte-grid {
-  display : grid;
-  grid-template-columns : repeat(1,1fr);
-  column-gap : 2rem;
-  row-gap : 2rem;
-  }
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[1];
+      grid-template-columns: repeat(1, 1fr);
+  -webkit-column-gap: 2rem;
+          column-gap: 2rem;
+  row-gap: 2rem;
+}
 
 @media screen and (min-width: 768px) {
   .carte-grid {
@@ -522,8 +525,9 @@
 
 @media (min-width: 64rem) {
   .cards {
-    grid-template-columns : repeat(2,1fr);
-    }
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 .carte {
@@ -907,9 +911,15 @@ body {
   padding: 2rem 1rem;
 }
 
-h2, h3 {
+h3 {
   font-family: "Roboto";
   font-weight: 700;
+}
+
+h2 {
+  font-family: "Roboto";
+  font-style: initial !important;
+  font-weight: 400;
 }
 
 p {
